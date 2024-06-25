@@ -40,9 +40,21 @@ The dataset consists of sales transactions from a coffee shop located in Lower M
 ---
 ## skills deployed
 Data cleaning and transformation 
-. sorted and fliltered the data to remove duplicate values 
-.	 added the revenue column by multiplying the quantity sold and unit cost using the syntax (=H2*D2)
-.	 added the month-name columns by using the syntax  (=TEXT(B2,"mmm")
-.	 added the weekday column by using the syntax (=TEXT(B2, "dddd")
-.	 added the hour of the day column by using the syntax (=HOUR(C2)
+1. sorted and fliltered the data to remove duplicate values 
+2. added the revenue column by multiplying the quantity sold and unit cost using the syntax (=H2*D2)
+3. added the month-name columns by using the syntax  (=TEXT(B2,"mmm")
+4. added the weekday column by using the syntax (=TEXT(B2, "dddd")
+5. added the hour of the day column by using the syntax (=HOUR(C2)
+# ANALYSIS 
+1. Total transaction by Product Category
+  - Objective: Determine the revenue contribution of each product category.
+  - Pivot Table Setup:
+    . Rows: product_category
+    . Values: count of transaction
+2. Total Revenue by Product Type
+ - Objective: Identify which product types generate the most revenue.
+ - 	Pivot Table Setup:
+	. Rows: product_type
+	. Values: Sum of REVENUE
+
 
